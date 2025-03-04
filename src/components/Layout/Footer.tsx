@@ -4,7 +4,7 @@ import logo from "@/../public/icons/logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="h-[259px] gradient flex justify-center items-center">
+    <footer className="h-[259px] bg-gradient flex justify-center items-center">
       <div className="flex items-center justify-between w-[1520px]">
         <div className="max-w-[378px] flex flex-col gap-[6px] pl-1">
           <div className="flex gap-[10px]">

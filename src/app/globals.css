@@ -6,13 +6,16 @@
   .margincenter {
     @apply mx-auto my-0;
   }
-  .gradient {
-    @apply bg-gradient-to-l to-[#F56066] via-5% via-[#E30500] from-secondary;
+  .bg-gradient {
+    @apply bg-gradient-to-l to-[#F56066] from-5% from-[#E30500];
+  }
+  .font-gradient {
+    @apply bg-gradient-to-l to-[#F56060] from-50% from-[#E30500] text-transparent bg-clip-text;
   }
 }
 
 :root {
-  background: #101010;
+  background: #141414;
   color: #eaeaea;
 }
 

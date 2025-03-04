@@ -21,21 +21,23 @@ export default function Header() {
   ];
 
   return (
-    <div className="max-w-[1520px] h-20 flex items-center gap-40 margincenter font-bold leading-6">
-      <Image src={logo} alt="logo" width={105} height={31} />
-      <nav className="flex gap-[62px] font-">
-        {navItems.map((navItem) => (
-          <Link
-            key={navItem.label}
-            href={navItem.href}
-            className={`${
-              pathname === navItem.href ? "text-primary" : "text-mainfont"
-            } hover:text-primary `}
-          >
-            {navItem.label}
-          </Link>
-        ))}
-      </nav>
-    </div>
+    <header className="bg-[#171717]">
+      <div className="max-w-[1520px] h-20 flex items-center gap-40 margincenter font-bold leading-6">
+        <Image src={logo} alt="logo" width={105} height={31} />
+        <nav className="flex gap-[62px] font-">
+          {navItems.map((navItem) => (
+            <Link
+              key={navItem.label}
+              href={navItem.href}
+              className={`${
+                pathname === navItem.href ? "text-primary" : "text-mainfont"
+              } hover:text-primary `}
+            >
+              {navItem.label}
+            </Link>
+          ))}
+        </nav>
+      </div>
+    </header>
   );
 }
