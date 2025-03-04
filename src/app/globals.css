@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .margincenter {
+    @apply mx-auto my-0;
+  }
+  .gradient {
+    @apply bg-gradient-to-l to-[#F56066] via-5% via-[#E30500] from-secondary;
+  }
+}
+
 :root {
   background: #101010;
   color: #eaeaea;
